@@ -384,6 +384,11 @@ img {
   color: var(--color-text-muted);
 }
 
+.trial-cta__highlight {
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
 .cta-lead {
   max-width: 640px;
   margin: 0 auto 12px;
