@@ -300,6 +300,19 @@ img {
   color: var(--color-accent-dark);
 }
 
+#trial-about .about-grid__quote,
+#trial-about .about-grid__link {
+  background-color: #06C755;
+}
+
+#trial-about .about-grid__link a {
+  color: var(--color-white);
+}
+
+#trial-about .about-grid__link a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .philosophy-goal {
   color: var(--color-primary-dark);
   font-weight: 700;
