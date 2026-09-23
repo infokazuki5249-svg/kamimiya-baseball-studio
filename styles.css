@@ -359,6 +359,16 @@ img {
   text-align: center;
 }
 
+.trial-bridge-lead {
+  max-width: 720px;
+  margin: 40px auto 0;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  line-height: 1.9;
+}
+
 /* ===== Trial CTA ===== */
 .trial-cta-card {
   max-width: 640px;
