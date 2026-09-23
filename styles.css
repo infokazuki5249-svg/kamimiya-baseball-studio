@@ -209,6 +209,10 @@ img {
   color: rgba(255, 255, 255, 0.85);
 }
 
+.hero__cta {
+  margin-top: 32px;
+}
+
 /* ===== About ===== */
 .about {
   padding: 96px 0;
@@ -339,36 +343,15 @@ img {
   background-color: var(--color-accent);
 }
 
-.concern-answer {
-  margin-top: 28px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(14, 124, 120, 0.16);
-  font-size: 1.02rem;
+/* ===== Solutions ===== */
+.solution-lead {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--color-primary-dark);
-  text-align: center;
   line-height: 1.9;
-}
-
-/* ===== Studio Features ===== */
-.features-cta {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.features-cta__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--color-primary-dark);
-  font-weight: 700;
-  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
-  text-decoration: none;
-  transition: color var(--duration-fast) var(--ease-snap);
-}
-
-.features-cta__link:hover {
-  color: var(--color-accent-dark);
 }
 
 /* ===== Trial CTA ===== */
@@ -987,64 +970,8 @@ img {
   100% { background-position: 35% 65%, 65% 35%, 0 0; }
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 24px;
+.contact .trial-cta-card {
   margin-top: 36px;
-  text-align: left;
-}
-
-.contact-grid > .bento-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 36px;
-}
-
-.contact-grid__line {
-  background: rgba(6, 199, 85, 0.12);
-  animation-delay: 0s;
-}
-
-.contact-grid__instagram {
-  background: rgba(214, 36, 159, 0.08);
-  animation-delay: 0.12s;
-}
-
-.contact-grid__icon {
-  width: 40px;
-  height: 40px;
-}
-
-.contact-grid__line .contact-grid__icon {
-  color: #06C755;
-}
-
-.contact-grid__instagram .contact-grid__icon {
-  color: #d6249f;
-}
-
-.contact-grid__title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--color-primary-dark);
-}
-
-.contact-grid__desc {
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
-}
-
-.contact-grid .btn {
-  margin-top: 8px;
-}
-
-.contact-grid__note {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  margin-top: 2px;
 }
 
 .btn {
@@ -1082,10 +1009,6 @@ img {
 
 .btn--line {
   background-color: #06C755;
-}
-
-.btn--instagram {
-  background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .btn--card {
@@ -1196,14 +1119,6 @@ img {
     justify-content: center;
   }
 
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-grid > .bento-item {
-    align-items: center;
-    text-align: center;
-  }
 }
 
 @media (max-width: 600px) {
@@ -1229,10 +1144,6 @@ img {
 
   .card__body {
     padding: 24px 20px 28px;
-  }
-
-  .contact-grid > .bento-item {
-    padding: 28px 24px;
   }
 
   .trial-cta-card {
