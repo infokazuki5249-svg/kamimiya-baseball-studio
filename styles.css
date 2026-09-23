@@ -300,6 +300,14 @@ img {
   color: var(--color-accent-dark);
 }
 
+#trial-about .about-grid__quote {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+#trial-about .about-grid__quote-text {
+  color: var(--color-text);
+}
+
 #trial-about .about-grid__link {
   background-color: #3FB6E0;
 }
