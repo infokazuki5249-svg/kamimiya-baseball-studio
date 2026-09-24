@@ -577,6 +577,10 @@ img {
   padding-bottom: 2px;
 }
 
+.site-nav__toggle {
+  display: none;
+}
+
 .site-nav__link--cta {
   background-color: var(--color-accent);
   color: var(--color-white);
@@ -1195,22 +1199,79 @@ img {
 
 @media (max-width: 600px) {
   .site-nav__inner {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .site-nav__logo {
+    font-size: 0.92rem;
+  }
+
+  .site-nav__toggle {
+    display: inline-flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 0 10px;
+    border: 2px solid var(--color-primary-dark);
+    border-radius: 12px;
+    background: var(--color-white);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .site-nav__toggle span {
+    display: block;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--color-primary-dark);
+    transition: transform var(--duration-fast) var(--ease-snap),
+                opacity var(--duration-fast) var(--ease-snap);
+  }
+
+  .site-nav__toggle.is-open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .site-nav__toggle.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .site-nav__toggle.is-open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .site-nav__links {
-    justify-content: center;
-    gap: 8px 12px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 12px 24px rgba(14, 124, 120, 0.18);
+  }
+
+  .site-nav__links.is-open {
+    display: flex;
   }
 
   .site-nav__link {
-    font-size: 0.82rem;
+    font-size: 1rem;
+    padding: 14px 12px;
+    text-align: center;
   }
 
   .site-nav__link--cta,
   .site-nav__link--cta[aria-current="page"] {
-    padding: 6px 12px;
+    padding: 14px 12px;
   }
 
   .hero__title {
