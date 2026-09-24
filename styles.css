@@ -592,6 +592,7 @@ img {
 .site-nav__link--cta[aria-current="page"] {
   border-bottom: none;
   padding: 8px 18px;
+  color: var(--color-white);
 }
 
 
@@ -1200,7 +1201,33 @@ img {
 
   .site-nav__links {
     justify-content: center;
-    gap: 14px;
+    gap: 8px 12px;
+  }
+
+  .site-nav__link {
+    font-size: 0.82rem;
+  }
+
+  .site-nav__link--cta,
+  .site-nav__link--cta[aria-current="page"] {
+    padding: 6px 12px;
+  }
+
+  .hero__title {
+    font-size: 1.4rem;
+  }
+
+  .about-grid__lead {
+    padding: 28px 20px;
+  }
+
+  #trial-about .about__lead {
+    font-size: 1rem;
+  }
+
+  #trial-about .about__lead br,
+  .trial-bridge-lead br {
+    display: none;
   }
 
   .about,
