@@ -300,6 +300,11 @@ img {
   color: var(--color-accent-dark);
 }
 
+.trial-about__note {
+  margin-top: 24px;
+  text-align: center;
+}
+
 #trial-about .about-grid__quote {
   background: rgba(255, 255, 255, 0.55);
 }
