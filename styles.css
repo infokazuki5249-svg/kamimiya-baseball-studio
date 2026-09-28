@@ -662,9 +662,17 @@ img {
 
 .bento-item--photo {
   grid-area: photo;
-  box-shadow: var(--shadow);
+  box-shadow: none;
+  border: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   min-height: 360px;
   transform: translateZ(0);
+}
+
+.bento-item--photo:hover {
+  box-shadow: none;
+  border-color: transparent;
 }
 
 .bento-item__img {
