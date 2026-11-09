@@ -190,40 +190,25 @@ img {
 }
 
 .hero__title {
-  font-size: clamp(3.6rem, 2.4rem + 7vw, 7.5rem);
   line-height: 1;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 }
 
-.kbs-mark {
-  position: relative;
-  display: inline-block;
-  line-height: 1;
-}
-
-.kbs-mark__text {
-  display: inline-block;
-  font-family: "Permanent Marker", "M PLUS Rounded 1c", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  transform: skewX(-10deg);
-}
-
-.kbs-crown {
-  position: absolute;
-  top: -0.5em;
-  left: 60%;
-  width: 0.42em;
+.kbs-logo {
+  display: block;
   height: auto;
-  transform: rotate(8deg);
 }
 
-.kbs-swoosh {
-  position: absolute;
-  left: -6%;
-  bottom: -0.2em;
-  width: 114%;
-  height: 0.2em;
+.kbs-logo--hero {
+  width: clamp(260px, 30vw, 460px);
+  margin: 0 auto;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.7));
+}
+
+.kbs-logo--nav {
+  height: 48px;
+  width: auto;
+  flex-shrink: 0;
 }
 
 .kbs-sub {
@@ -232,44 +217,12 @@ img {
   line-height: 1.35;
 }
 
-.kbs-mark--hero {
-  color: var(--color-white);
-}
-
-.kbs-mark--hero .kbs-mark__text {
-  text-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
-}
-
-.kbs-mark--hero .kbs-crown,
-.kbs-mark--hero .kbs-swoosh {
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
-}
-
 .kbs-sub--hero {
   font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1.1rem);
   letter-spacing: 0.3em;
   color: rgba(255, 255, 255, 0.92);
   margin-bottom: 26px;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-}
-
-.kbs-mark--nav {
-  font-size: 1.7rem;
-  margin-top: 0.3em;
-}
-
-.kbs-mark--nav .kbs-mark__text {
-  background: linear-gradient(100deg, var(--color-primary-dark) 0%, var(--color-primary) 55%, var(--color-accent-dark) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--color-primary-dark);
-  padding-right: 0.08em;
-}
-
-.kbs-mark--nav .kbs-crown,
-.kbs-mark--nav .kbs-swoosh {
-  color: var(--color-accent);
 }
 
 .kbs-sub--nav {
@@ -627,13 +580,6 @@ img {
   text-decoration: none;
   font-size: 1.4rem;
   letter-spacing: 0.06em;
-}
-
-.site-nav__logo-icon {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  flex-shrink: 0;
 }
 
 .site-nav__links {
@@ -1210,13 +1156,6 @@ img {
   margin-bottom: 8px;
 }
 
-.footer__logo-icon {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
 .footer__name {
   font-size: 1.15rem;
   font-weight: 700;
@@ -1297,6 +1236,8 @@ img {
     flex-wrap: nowrap;
     justify-content: space-between;
     position: relative;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .site-nav__logo {
@@ -1370,12 +1311,15 @@ img {
   }
 
   .hero__title {
-    font-size: 4.6rem;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
   }
 
-  .kbs-mark--nav {
-    font-size: 1.45rem;
+  .kbs-logo--nav {
+    height: 44px;
+  }
+
+  .kbs-logo--hero {
+    width: min(78vw, 340px);
   }
 
   .kbs-sub--nav {
